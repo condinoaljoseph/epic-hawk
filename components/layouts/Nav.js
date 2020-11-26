@@ -7,27 +7,27 @@ export default function Nav() {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6">
 				<div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
 					<div className="flex justify-start lg:w-0 lg:flex-1">
-						<a href="#">
-							<span className="sr-only">Epic Hawk</span>
-							<img
-								className="h-8 w-auto sm:h-10"
-								src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-								alt=""
-							/>
-						</a>
+						<Link href="/">
+							<a href="#">
+								<span className="sr-only">Epic Hawk</span>
+								<img
+									className="h-8 w-auto sm:h-10"
+									src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+									alt=""
+								/>
+							</a>
+						</Link>
 					</div>
-					<a
-						href="#"
-						className="text-base font-medium text-gray-500 hover:text-gray-900"
-					>
-						Blogs
-					</a>
-					<a
-						href="#"
-						className="text-base font-medium text-gray-500 hover:text-gray-900"
-					>
-						Jobs
-					</a>
+					<Link href="/blogs">
+						<a className="text-base font-medium text-gray-500 hover:text-gray-900">
+							Blogs
+						</a>
+					</Link>
+					<Link href="/jobs">
+						<a className="text-base font-medium text-gray-500 hover:text-gray-900">
+							Jobs
+						</a>
+					</Link>
 					<Link href="/about">
 						<a className="text-base font-medium text-gray-500 hover:text-gray-900">
 							About
