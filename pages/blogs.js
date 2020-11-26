@@ -1,10 +1,11 @@
-import Main from "../components/layouts/Main";
+import Layout from "../components/layouts/Layout";
 
-export default function Blogs({ children }) {
+export default function Blogs() {
 	return (
-		<Main>
-			{children}
-			<h1>Blogs</h1>
-		</Main>
+		<Layout>
+			<h1 className="text-center text-heading text-4xl font-bold">
+				Blogs
+			</h1>
+		</Layout>
 	);
 }
