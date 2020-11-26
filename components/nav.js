@@ -1,38 +1,54 @@
+// pre made from https://tailwindui.com/preview
 import Link from "next/link";
-
-const links = [
-	{ href: "https://github.com/vercel/next.js", label: "GitHub" },
-	{ href: "https://nextjs.org/docs", label: "Docs" }
-];
 
 export default function Nav() {
 	return (
-		<nav>
-			<ul className="flex items-center justify-between p-8">
-				<li>
-					<Link href="/">
-						<a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
-							Home
+		<div className="relative bg-white">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6">
+				<div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+					<div className="flex justify-start lg:w-0 lg:flex-1">
+						<a href="#">
+							<span className="sr-only">Epic Hawk</span>
+							<img
+								className="h-8 w-auto sm:h-10"
+								src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+								alt=""
+							/>
 						</a>
-					</Link>
-				</li>
-				<li>
+					</div>
+					<a
+						href="#"
+						className="text-base font-medium text-gray-500 hover:text-gray-900"
+					>
+						Blogs
+					</a>
+					<a
+						href="#"
+						className="text-base font-medium text-gray-500 hover:text-gray-900"
+					>
+						Jobs
+					</a>
 					<Link href="/about">
-						<a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
+						<a className="text-base font-medium text-gray-500 hover:text-gray-900">
 							About
 						</a>
 					</Link>
-				</li>
-				<ul className="flex items-center justify-between space-x-4">
-					{links.map(({ href, label }) => (
-						<li key={`${href}${label}`}>
-							<a href={href} className="no-underline btn-blue">
-								{label}
-							</a>
-						</li>
-					))}
-				</ul>
-			</ul>
-		</nav>
+					<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+						<a
+							href="#"
+							className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+						>
+							Sign in
+						</a>
+						<a
+							href="#"
+							className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+						>
+							Sign up
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	);
 }
