@@ -1,10 +1,10 @@
 import Main from "../components/layouts/Main";
 
-export default function About({ children }) {
+export default function Blogs({ children }) {
 	return (
 		<Main>
 			{children}
-			<h1>About</h1>
+			<h1>Blogs</h1>
 		</Main>
 	);
 }
