@@ -10,8 +10,8 @@ export default function Main({ children }) {
 					href="https://cdn2.whatoplay.com/developers/no_image.png"
 				/>
 			</Head>
-			<main id="main-content">
-				<div className="md:flex bg-white rounded-lg p-24 justify-center">
+			<main id="main-content" className="w-screen h-screen bg-background">
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 p-8">
 					{children}
 				</div>
 			</main>

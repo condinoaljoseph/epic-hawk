@@ -1,12 +1,13 @@
 import axios from "axios";
-import Main from "../components/layouts/Main";
+import Layout from "../components/layouts/Layout";
 
-export default function Home({ children, user }) {
+export default function Home({ user }) {
 	return (
-		<Main>
-			{children}
-			<h1>Welcome {user}</h1>
-		</Main>
+		<Layout>
+			<h1 className="text-center text-heading text-4xl font-bold">
+				Home
+			</h1>
+		</Layout>
 	);
 }
 

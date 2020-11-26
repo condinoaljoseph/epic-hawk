@@ -1,9 +1,12 @@
 // pre made from https://tailwindui.com/preview
 import Link from "next/link";
+import { useTheme } from "../../utils/themeContext";
 
 export default function Nav() {
+	const { toggleTheme } = useTheme();
+
 	return (
-		<div className="relative bg-white">
+		<div className="relative bg-background">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6">
 				<div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
 					<div className="flex justify-start lg:w-0 lg:flex-1">
@@ -13,30 +16,38 @@ export default function Nav() {
 								<img
 									className="h-8 w-auto sm:h-10"
 									src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+									// src="https://cdn2.whatoplay.com/ui/logo.png"
 									alt=""
 								/>
 							</a>
 						</Link>
 					</div>
 					<Link href="/blogs">
-						<a className="text-base font-medium text-gray-500 hover:text-gray-900">
+						<a className="text-base font-medium text-secondary">
 							Blogs
 						</a>
 					</Link>
 					<Link href="/jobs">
-						<a className="text-base font-medium text-gray-500 hover:text-gray-900">
+						<a className="text-base font-medium text-secondary">
 							Jobs
 						</a>
 					</Link>
 					<Link href="/about">
-						<a className="text-base font-medium text-gray-500 hover:text-gray-900">
+						<a className="text-base font-medium text-secondary">
 							About
 						</a>
 					</Link>
+					<a
+						href="#"
+						className="text-base font-medium text-secondary"
+						onClick={toggleTheme}
+					>
+						Theme
+					</a>
 					<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
 						<a
 							href="#"
-							className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+							className="whitespace-nowrap text-base font-medium text-secondary"
 						>
 							Sign in
 						</a>

@@ -1,12 +1,12 @@
-import Nav from "../components/layouts/Nav";
 import "../styles/index.css";
+
+import ThemeProvider from "../utils/themeContext";
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<>
-			<Nav />
+		<ThemeProvider>
 			<Component {...pageProps} />
-		</>
+		</ThemeProvider>
 	);
 }
 
