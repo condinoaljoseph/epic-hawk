@@ -1,6 +1,6 @@
-import Head from "next/head";
+import axios from "axios";
 
-export default function Home() {
+export default function Home({ user }) {
 	return (
 		<div className="md:flex bg-white rounded-lg p-24 justify-center">
 			<img
@@ -8,11 +8,21 @@ export default function Home() {
 				src="https://avatars0.githubusercontent.com/u/41994701?s=460&u=35dae1253908bbc1c7d1295faaff9a727b7c39de&v=4"
 			/>
 			<div className="text-center md:text-left">
-				<h2 className="text-lg">Al Joseph Condino</h2>
+				<h2 className="text-lg">{user}</h2>
 				<div className="text-purple-500">JavaScript developer</div>
 				<div className="text-gray-600">Twitter: @condinoaj</div>
 				<div className="text-gray-600">www.ajpower.com</div>
 			</div>
 		</div>
 	);
+}
+
+export async function getStaticProps() {
+	const { data } = await axios.get("http://localhost:5000/api");
+
+	return {
+		props: {
+			user: data.user
+		}
+	};
 }
