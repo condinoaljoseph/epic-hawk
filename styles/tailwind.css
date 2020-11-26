@@ -1,6 +1,0 @@
-/* link to setup tailwind with next js */
-/* https://medium.com/better-programming/how-to-set-up-next-js-with-tailwind-css-b93ccd2d4164 */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
