@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useTheme } from "../../utils/themeContext";
 
 export default function Nav() {
-	const { toggleTheme } = useTheme();
+	const { toggleTheme, theme } = useTheme();
 
 	return (
 		<div className="relative bg-background">
@@ -32,18 +32,37 @@ export default function Nav() {
 							Jobs
 						</a>
 					</Link>
+					<Link href="/faqs">
+						<a className="text-base font-medium text-secondary">
+							Faqs
+						</a>
+					</Link>
 					<Link href="/about">
 						<a className="text-base font-medium text-secondary">
 							About
 						</a>
 					</Link>
-					<a
-						href="#"
-						className="text-base font-medium text-secondary"
-						onClick={toggleTheme}
-					>
-						Theme
-					</a>
+					<div class="flex items-center justify-center">
+						<label
+							htmlFor="toogleA"
+							className="flex items-center cursor-pointer"
+						>
+							<div className="relative">
+								<input
+									id="toogleA"
+									type="checkbox"
+									className="hidden"
+									onClick={toggleTheme}
+								/>
+								<div className="toggle__line w-10 h-4 bg-secondary rounded-full shadow-inner"></div>
+								<div className="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
+							</div>
+							<div className="ml-3 text-secondary font-medium">
+								{theme === "theme-light" ? "Dark" : "Light"}{" "}
+								Theme
+							</div>
+						</label>
+					</div>
 					<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
 						<a
 							href="#"
