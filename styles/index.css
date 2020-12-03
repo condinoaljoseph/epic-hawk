@@ -11,8 +11,8 @@ body {
 }
 
 .theme-light {
-	--color-primary: theme("colors.blue.700");
-	--color-primary-hover: theme("colors.blue.800");
+	--color-primary: theme("colors.pink.700");
+	--color-primary-hover: theme("colors.pink.800");
 
 	--color-secondary: theme("colors.gray.600");
 	--color-secondary-hover: theme("colors.gray.700");
@@ -24,9 +24,9 @@ body {
 	--color-success-hover: theme("colors.green.700");
 	--color-success-background: theme("colors.green.100");
 
-	--color-info: theme("colors.blue.300");
-	--color-info-hover: theme("colors.blue.500");
-	--color-info-background: theme("colors.blue.100");
+	--color-info: theme("colors.pink.300");
+	--color-info-hover: theme("colors.pink.500");
+	--color-info-background: theme("colors.pink.100");
 
 	--color-warning: theme("colors.yellow.300");
 	--color-warning-hover: theme("colors.yellow.500");
@@ -47,8 +47,8 @@ body {
 }
 
 .theme-dark {
-	--color-primary: theme("colors.blue.300");
-	--color-primary-hover: theme("colors.blue.200");
+	--color-primary: theme("colors.pink.300");
+	--color-primary-hover: theme("colors.pink.200");
 
 	--color-secondary: theme("colors.gray.400");
 	--color-secondary-hover: theme("colors.gray.300");
@@ -60,9 +60,9 @@ body {
 	--color-success-hover: theme("colors.green.500");
 	--color-success-background: theme("colors.green.900");
 
-	--color-info: theme("colors.blue.700");
-	--color-info-hover: theme("colors.blue.500");
-	--color-info-background: theme("colors.blue.900");
+	--color-info: theme("colors.pink.700");
+	--color-info-hover: theme("colors.pink.500");
+	--color-info-background: theme("colors.pink.900");
 
 	--color-warning: theme("colors.yellow.700");
 	--color-warning-hover: theme("colors.yellow.500");

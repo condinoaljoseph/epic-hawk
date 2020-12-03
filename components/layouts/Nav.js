@@ -42,7 +42,7 @@ export default function Nav() {
 							About
 						</a>
 					</Link>
-					<div class="flex items-center justify-center">
+					<div className="flex items-center justify-center">
 						<label
 							htmlFor="toogleA"
 							className="flex items-center cursor-pointer"
@@ -57,22 +57,24 @@ export default function Nav() {
 								<div className="toggle__line w-10 h-4 bg-secondary rounded-full shadow-inner"></div>
 								<div className="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
 							</div>
-							<div className="ml-3 text-secondary font-medium">
-								{theme === "theme-light" ? "Dark" : "Light"}{" "}
-								Theme
-							</div>
+							<a
+								className="ml-3 text-secondary font-medium"
+								href="https://github.com/condinoaljoseph/epic-hawk"
+								target="_blank"
+							>
+								Github
+							</a>
 						</label>
 					</div>
 					<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+						<Link href="/signin">
+							<a className="whitespace-nowrap text-base font-medium text-secondary">
+								Sign in
+							</a>
+						</Link>
 						<a
 							href="#"
-							className="whitespace-nowrap text-base font-medium text-secondary"
-						>
-							Sign in
-						</a>
-						<a
-							href="#"
-							className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+							className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary"
 						>
 							Sign up
 						</a>
