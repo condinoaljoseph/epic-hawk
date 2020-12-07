@@ -16,7 +16,6 @@ export default function Nav() {
 								<img
 									className="h-8 w-auto sm:h-10"
 									src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-									// src="https://cdn2.whatoplay.com/ui/logo.png"
 									alt=""
 								/>
 							</a>
@@ -52,7 +51,8 @@ export default function Nav() {
 									id="toogleA"
 									type="checkbox"
 									className="hidden"
-									onClick={toggleTheme}
+									checked={theme !== "theme-light"}
+									onChange={toggleTheme}
 								/>
 								<div className="toggle__line w-10 h-4 bg-secondary rounded-full shadow-inner"></div>
 								<div className="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
