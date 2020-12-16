@@ -14,9 +14,10 @@ export default function Nav() {
 							<a href="#">
 								<span className="sr-only">Epic Hawk</span>
 								<img
-									className="h-8 w-auto sm:h-10"
-									src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+									className="h-16 w-auto sm:h-18 mb-4"
+									src="/hawk.png"
 									alt=""
+									width="250px"
 								/>
 							</a>
 						</Link>
