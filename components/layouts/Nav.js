@@ -6,16 +6,16 @@ export default function Nav() {
 	const { toggleTheme, theme } = useTheme();
 
 	return (
-		<div className="relative bg-background">
+		<nav className="relative bg-background">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6">
-				<div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+				<div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
 					<div className="flex justify-start lg:w-0 lg:flex-1">
 						<Link href="/">
 							<a href="#">
 								<span className="sr-only">Epic Hawk</span>
 								<img
-									className="h-16 w-auto sm:h-18 mb-4"
-									src="/hawk.png"
+									className="h-12 w-auto sm:h-14"
+									src="/hawk-dark.png"
 									alt=""
 									width="250px"
 								/>
@@ -23,24 +23,16 @@ export default function Nav() {
 						</Link>
 					</div>
 					<Link href="/blogs">
-						<a className="text-base font-medium text-secondary">
-							Blogs
-						</a>
+						<a className="text-base  text-secondary">Blogs</a>
 					</Link>
 					<Link href="/jobs">
-						<a className="text-base font-medium text-secondary">
-							Jobs
-						</a>
+						<a className="text-base  text-secondary">Jobs</a>
 					</Link>
 					<Link href="/faqs">
-						<a className="text-base font-medium text-secondary">
-							Faqs
-						</a>
+						<a className="text-base  text-secondary">Faqs</a>
 					</Link>
 					<Link href="/about">
-						<a className="text-base font-medium text-secondary">
-							About
-						</a>
+						<a className="text-base  text-secondary">About</a>
 					</Link>
 					<div className="flex items-center justify-center">
 						<label
@@ -56,10 +48,10 @@ export default function Nav() {
 									onChange={toggleTheme}
 								/>
 								<div className="toggle__line w-10 h-4 bg-secondary rounded-full shadow-inner"></div>
-								<div className="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
+								<div className="toggle__dot absolute w-6 h-6 bg-hawk rounded-full shadow inset-y-0 left-0"></div>
 							</div>
 							<a
-								className="ml-3 text-secondary font-medium"
+								className="ml-3 text-secondary "
 								href="https://github.com/condinoaljoseph/epic-hawk"
 								target="_blank"
 							>
@@ -69,19 +61,19 @@ export default function Nav() {
 					</div>
 					<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
 						<Link href="/signin">
-							<a className="whitespace-nowrap text-base font-medium text-secondary">
+							<a className="whitespace-nowrap text-base  text-secondary">
 								Sign in
 							</a>
 						</Link>
 						<a
 							href="#"
-							className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary"
+							className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-3 py-2 border border-transparent rounded-md shadow-sm bg-hawk hover:bg-hawk-light"
 						>
 							Sign up
 						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 }
