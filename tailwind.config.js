@@ -31,7 +31,11 @@ module.exports = {
 				"heading": "var(--color-heading)",
 				"heading-muted": "var(--color-heading-muted)",
 				"body": "var(--color-body)",
-				"body-muted": "var(--color-body-muted)"
+				"body-muted": "var(--color-body-muted)",
+				"hawk": {
+					light: "#fcdfdf",
+					DEFAULT: "#fbcaca"
+				}
 			}
 		}
 	},
