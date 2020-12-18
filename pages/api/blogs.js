@@ -1,10 +1,10 @@
-import axios from "axios";
+import axios from 'axios';
 
-export default (req, res) => {
-	axios
-		.get("https://dev.to/api/articles")
-		.then((response) => {
-			res.status(200).json({ blogs: response.data });
-		})
-		.catch((error) => console.log(error));
+export default async (req, res) => {
+	try {
+		const { data } = await axios.get('https://dev.to/api/articles');
+		res.status(200).json({ blogs: data });
+	} catch (error) {
+		res.status(404);
+	}
 };
