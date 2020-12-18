@@ -11,6 +11,9 @@ body {
 }
 
 .theme-light {
+	--color-hawk: theme("colors.hawk.DEFAULT");
+	--color-hawk-hover: theme("colors.hawk.light");
+
 	--color-primary: theme("colors.pink.700");
 	--color-primary-hover: theme("colors.pink.800");
 
@@ -47,6 +50,9 @@ body {
 }
 
 .theme-dark {
+	--color-hawk: theme("colors.hawk.light");
+	--color-hawk-hover: theme("colors.hawk.DEFAULT");
+
 	--color-primary: theme("colors.pink.300");
 	--color-primary-hover: theme("colors.pink.200");
 
@@ -87,7 +93,7 @@ body {
 }
 
 .gradient {
-	background-image: linear-gradient(135deg, #684ca0 35%, #1c4ca0 100%);
+	background-image: linear-gradient(135deg, #fbcaca 35%, #fcdfdf 100%);
 }
 
 .toggle__dot {
