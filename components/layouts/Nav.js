@@ -1,6 +1,6 @@
 // pre made from https://tailwindui.com/preview
-import Link from "next/link";
-import { useTheme } from "../../utils/themeContext";
+import Link from 'next/link';
+import { useTheme } from '../../utils/themeContext';
 
 export default function Nav() {
 	const { toggleTheme, theme } = useTheme();
@@ -11,7 +11,7 @@ export default function Nav() {
 				<div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
 					<div className="flex justify-start lg:w-0 lg:flex-1">
 						<Link href="/">
-							<a href="#">
+							<a>
 								<span className="sr-only">Epic Hawk</span>
 								<img
 									className="h-12 w-auto sm:h-14"
@@ -44,7 +44,7 @@ export default function Nav() {
 									id="toogleA"
 									type="checkbox"
 									className="hidden"
-									checked={theme !== "theme-light"}
+									checked={theme !== 'theme-light'}
 									onChange={toggleTheme}
 								/>
 								<div className="toggle__line w-10 h-4 bg-secondary rounded-full shadow-inner"></div>
@@ -60,7 +60,7 @@ export default function Nav() {
 						</label>
 					</div>
 					<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-						<Link href="/signin">
+						<Link href="/auth">
 							<a className="whitespace-nowrap text-base  text-secondary">
 								Sign in
 							</a>
