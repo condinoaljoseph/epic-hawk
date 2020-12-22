@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'axios';
+import axios from '../../utils/axios/api';
 
 export default function Reset() {
 	const [message, setMessage] = useState('');
