@@ -26,5 +26,6 @@
 		"eslint-plugin-import": "^2.22.1",
 		"postcss-preset-env": "^6.7.0",
 		"tailwindcss": "^2.0.1"
-	}
+	},
+	"proxy": "http://localhost:9000"
 }

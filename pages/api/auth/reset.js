@@ -1,9 +1,9 @@
-import axios from 'axios';
+import axios from '../../../utils/axios/api';
 
 export default async (req, res) => {
 	try {
 		if (req.method === 'POST') {
-			const { data } = await axios.post('http://localhost:9000/auth/recover', {
+			const { data } = await axios.post('/auth/recover', {
 				email: req.body.email
 			});
 

@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState, useContext, createContext } from 'react';
 
-const initialValue = { theme: "theme-light" };
+const initialValue = { theme: 'theme-light' };
 
-export const ThemeContext = React.createContext(initialValue);
+export const ThemeContext = createContext(initialValue);
 
 export default function ThemeProvider({ children }) {
-	const [theme, setTheme] = React.useState("theme-light");
+	const [theme, setTheme] = useState('theme-light');
 
 	const toggleTheme = () => {
-		setTheme(theme === "theme-light" ? "theme-dark" : "theme-light");
+		setTheme(theme === 'theme-light' ? 'theme-dark' : 'theme-light');
 	};
 
 	return (
@@ -19,5 +19,5 @@ export default function ThemeProvider({ children }) {
 }
 
 export function useTheme() {
-	return React.useContext(ThemeContext);
+	return useContext(ThemeContext);
 }

@@ -1,4 +1,3 @@
-// pre made from https://tailwindui.com/preview
 import Link from 'next/link';
 import { useTheme } from '../../utils/themeContext';
 
@@ -6,7 +5,7 @@ export default function Nav() {
 	const { toggleTheme, theme } = useTheme();
 
 	return (
-		<nav className="relative bg-background">
+		<nav className="relative bg-white shadow-sm">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6">
 				<div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
 					<div className="flex justify-start lg:w-0 lg:flex-1">
@@ -62,14 +61,14 @@ export default function Nav() {
 					<div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
 						<Link href="/auth">
 							<a className="whitespace-nowrap text-base  text-secondary">
-								Sign in
+								Log in
 							</a>
 						</Link>
 						<a
 							href="#"
-							className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-3 py-2 border border-transparent rounded-md shadow-sm bg-hawk hover:bg-hawk-light"
+							className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-3 py-2 border border-transparent rounded-md text-primary shadow-sm bg-hawk hover:bg-hawk-light"
 						>
-							Sign up
+							Create account
 						</a>
 					</div>
 				</div>

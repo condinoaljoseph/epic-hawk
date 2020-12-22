@@ -1,8 +1,9 @@
-import Head from "next/head";
-import Nav from "./Nav";
-import Main from "./Main";
+import Head from 'next/head';
+import Nav from './Nav';
+import Main from './Main';
+import Footer from './Footer';
 
-import { useTheme } from "../../utils/themeContext";
+import { useTheme } from '../../utils/themeContext';
 
 export default function Layout({ children }) {
 	const { theme } = useTheme();
@@ -19,6 +20,7 @@ export default function Layout({ children }) {
 			<div className={`content-transition duration-200 ${theme}`}>
 				<Nav />
 				<Main children={children} />
+				<Footer />
 			</div>
 		</>
 	);
