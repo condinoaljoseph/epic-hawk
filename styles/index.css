@@ -1,91 +1,64 @@
-/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
-/* purgecss end ignore */
 @tailwind utilities;
 
-/* purgecss start ignore */
 html,
 body {
 	@apply bg-background;
 }
 
 .theme-light {
-	--color-hawk: theme("colors.hawk.DEFAULT");
-	--color-hawk-hover: theme("colors.hawk.light");
+	--color-primary: theme('colors.pink.700');
+	--color-primary-hover: theme('colors.pink.800');
 
-	--color-primary: theme("colors.pink.700");
-	--color-primary-hover: theme("colors.pink.800");
+	--color-secondary: theme('colors.gray.600');
+	--color-secondary-hover: theme('colors.gray.700');
 
-	--color-secondary: theme("colors.gray.600");
-	--color-secondary-hover: theme("colors.gray.700");
+	--color-muted: theme('colors.gray.300');
+	--color-muted-hover: theme('colors.gray.500');
 
-	--color-muted: theme("colors.gray.300");
-	--color-muted-hover: theme("colors.gray.500");
+	--color-danger: theme('colors.red.500');
+	--color-danger-hover: theme('colors.red.700');
+	--color-danger-background: theme('colors.red.100');
 
-	--color-success: theme("colors.green.500");
-	--color-success-hover: theme("colors.green.700");
-	--color-success-background: theme("colors.green.100");
+	--color-body: theme('colors.gray.700');
+	--color-body-muted: theme('colors.gray.500');
 
-	--color-info: theme("colors.pink.300");
-	--color-info-hover: theme("colors.pink.500");
-	--color-info-background: theme("colors.pink.100");
+	--color-heading: theme('colors.gray.900');
+	--color-heading-muted: theme('colors.gray.600');
 
-	--color-warning: theme("colors.yellow.300");
-	--color-warning-hover: theme("colors.yellow.500");
-	--color-warning-background: theme("colors.yellow.100");
+	--color-background: theme('colors.gray.100');
+	--color-background-muted: theme('colors.gray.200');
 
-	--color-danger: theme("colors.red.500");
-	--color-danger-hover: theme("colors.red.700");
-	--color-danger-background: theme("colors.red.100");
-
-	--color-body: theme("colors.gray.700");
-	--color-body-muted: theme("colors.gray.500");
-
-	--color-heading: theme("colors.gray.900");
-	--color-heading-muted: theme("colors.gray.600");
-
-	--color-background: theme("colors.gray.100");
-	--color-background-muted: theme("colors.gray.200");
+	--color-hawk: theme('colors.hawk.DEFAULT');
+	--color-hawk-hover: theme('colors.hawk.light');
 }
 
 .theme-dark {
-	--color-hawk: theme("colors.hawk.light");
-	--color-hawk-hover: theme("colors.hawk.DEFAULT");
+	--color-primary: theme('colors.pink.300');
+	--color-primary-hover: theme('colors.pink.200');
 
-	--color-primary: theme("colors.pink.300");
-	--color-primary-hover: theme("colors.pink.200");
+	--color-secondary: theme('colors.gray.400');
+	--color-secondary-hover: theme('colors.gray.300');
 
-	--color-secondary: theme("colors.gray.400");
-	--color-secondary-hover: theme("colors.gray.300");
+	--color-muted: theme('colors.gray.700');
+	--color-muted-hover: theme('colors.gray.500');
 
-	--color-muted: theme("colors.gray.700");
-	--color-muted-hover: theme("colors.gray.500");
+	--color-danger: theme('colors.red.700');
+	--color-danger-hover: theme('colors.red.500');
+	--color-danger-background: theme('colors.red.900');
 
-	--color-success: theme("colors.green.700");
-	--color-success-hover: theme("colors.green.500");
-	--color-success-background: theme("colors.green.900");
+	--color-body: theme('colors.gray.300');
+	--color-body-muted: theme('colors.gray.500');
 
-	--color-info: theme("colors.pink.700");
-	--color-info-hover: theme("colors.pink.500");
-	--color-info-background: theme("colors.pink.900");
+	--color-heading: theme('colors.gray.200');
+	--color-heading-muted: theme('colors.gray.400');
 
-	--color-warning: theme("colors.yellow.700");
-	--color-warning-hover: theme("colors.yellow.500");
-	--color-warning-background: theme("colors.yellow.900");
+	--color-background: theme('colors.gray.900');
+	--color-background-muted: theme('colors.gray.800');
 
-	--color-danger: theme("colors.red.700");
-	--color-danger-hover: theme("colors.red.500");
-	--color-danger-background: theme("colors.red.900");
-
-	--color-body: theme("colors.gray.300");
-	--color-body-muted: theme("colors.gray.500");
-
-	--color-heading: theme("colors.gray.200");
-	--color-heading-muted: theme("colors.gray.400");
-
-	--color-background: theme("colors.gray.900");
-	--color-background-muted: theme("colors.gray.800");
+	--color-hawk: theme('colors.hawk.light');
+	--color-hawk-hover: theme('colors.hawk.DEFAULT');
 }
 
 .content-transition {
@@ -105,5 +78,3 @@ body {
 input:checked ~ .toggle__dot {
 	transform: translateX(100%);
 }
-
-/* purgecss end ignore */
