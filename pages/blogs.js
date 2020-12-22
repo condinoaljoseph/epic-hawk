@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useEffect, useState } from 'react';
+import axios from '../utils/axios/base';
 
-import Layout from "../components/layouts/Layout";
-import Blog from "../components/blogs/Blog";
+import Layout from '../components/layouts/Layout';
+import Blog from '../components/blogs/Blog';
 
 export default function Blogs({ blogs }) {
 	const [articles, setArticles] = useState([]);
@@ -22,7 +22,7 @@ export default function Blogs({ blogs }) {
 }
 
 export async function getStaticProps() {
-	const { data } = await axios.get("http://localhost:5000/api/blogs");
+	const { data } = await axios.get('/api/blogs');
 
 	return {
 		props: {
